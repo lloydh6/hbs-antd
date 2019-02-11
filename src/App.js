@@ -1,64 +1,55 @@
 import React from 'react';
-import { Form, Select, InputNumber, DatePicker, Switch, Slider, Button } from 'antd';
+import { Form, Select, Input, Icon, Button } from 'antd';
 import './App.css';
 
 const { Option } = Select;
 
 const App = () => (
   <Form>
-    <Form.Item
-      label="数字输入框"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 8 }}
+      <Form.Item
+      colon={false}
+      label="Icon Buttons"
     >
-      <InputNumber min={1} max={10} defaultValue={3} />
-      <span className="ant-form-text"> 台机器</span>
-      <a href="https://ant.design">链接文字</a>
+      <Button type="primary" shape="circle" icon="calendar" size="large" />
+      &nbsp;
+      <Button shape="circle" icon="phone" size="large" />
+      &nbsp;
+      <Button shape="circle" icon="phone" />
+      &nbsp;
+      <Button shape="circle" icon="message" size="small" />
+    </Form.Item>
+  
+    <Form.Item
+      colon={false}
+      label="Email Address"
+    >
+      <Input size="large" defaultValue={"Howdy"} />
     </Form.Item>
     <Form.Item
-      label="开关"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 8 }}
+      colon={false}
+      label="Password"
     >
-      <Switch defaultChecked />
+      <Input type="password" size="large" />
     </Form.Item>
-    <Form.Item
-      label="滑动输入条"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 8 }}
-    >
-      <Slider defaultValue={70} />
-    </Form.Item>
-    <Form.Item
-      label="选择器"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 8 }}
-    >
-      <Select defaultValue="lucy" style={{ width: 192 }}>
-        <Option value="jack">jack</Option>
-        <Option value="lucy">lucy</Option>
-        <Option value="disabled" disabled>disabled</Option>
-        <Option value="yiminghe">yiminghe</Option>
-      </Select>
-    </Form.Item>
-    <Form.Item
-      label="日期选择框"
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 8 }}
-    >
-      <DatePicker />
-    </Form.Item>
-    <Form.Item
-      style={{ marginTop: 48 }}
-      wrapperCol={{ span: 8, offset: 8 }}
-    >
-      <Button type="primary" htmlType="submit">
-        确定
-      </Button>
-      <Button style={{ marginLeft: 8 }}>
-        取消
-      </Button>
-    </Form.Item>
+    <Form.Item style={{textAlign: "center"}}>
+          <Button
+            type="primary"
+            htmlType="submit"
+          >
+            Log in
+          </Button>
+          &nbsp;
+          <Button><Icon type="down"/>
+            Example
+          </Button>
+          &nbsp;
+          <Button
+            type="primary"
+          >
+          <Icon type="plus"/>
+            New Task
+          </Button>
+        </Form.Item>
   </Form>
 );
 

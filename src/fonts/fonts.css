@@ -1,0 +1,55 @@
+  @font-face {
+    font-family: 'Axiforma';
+    src: url('./Kastelov - Axiforma Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Axiforma';
+    src: url('./Kastelov - Axiforma Light Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Axiforma';
+    src: url('./Kastelov - Axiforma Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Axiforma';
+    src: url('./Kastelov - Axiforma Bold Italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Axiforma';
+    src: url('./Poppins-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
