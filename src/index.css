@@ -5,15 +5,12 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 .ant-form-item-label {
   line-height: 36px;
   font-weight: bold;
-}
-
-.ant-input {
-  border-width: 0 0 1px 0;
 }
 
 .ant-btn {
@@ -37,4 +34,8 @@ body {
 .ant-btn-icon-only.ant-btn-primary {
   color: #fff;
   border: none;
+}
+
+.application-root {
+  height: 100%;
 }

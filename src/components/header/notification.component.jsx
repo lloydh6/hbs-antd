@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from 'antd';
 
 const Notifications = () => (
-  <div className="notification-icon">
+  <div className="notifications">
     <Icon type="bell" style={{ fontSize: '20px' }} />
   </div>
 );

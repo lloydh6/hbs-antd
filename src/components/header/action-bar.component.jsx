@@ -10,7 +10,7 @@ const ActionBar = () => (
   <div className="action-bar">
     <Row>
       <Col span={10}>
-        Home
+        
       </Col>
       <Col span={14}>
         <div className="action-button-group">

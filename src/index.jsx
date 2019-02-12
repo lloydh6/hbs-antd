@@ -2,13 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { applyMiddleware, createStore, compose } from 'redux';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import reducers from './reducers';
 import './index.css';
 
-const store = createStore(reducers);
+const middleware = [];
+
+if (process.env.NODE_ENV === 'development') {
+  const { logger } = require('redux-logger');
+
+  middleware.push(logger);
+}
+
+const store = compose(applyMiddleware(...middleware))(createStore)(reducers);
 
 ReactDOM.render(
   <Provider store={store}>

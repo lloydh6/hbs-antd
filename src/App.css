@@ -36,16 +36,7 @@
   padding: 0;
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 0px 2px 0px;
-  line-height: 71px;
-}
-
-.ant-layout-header .notification-icon {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  size: 28px;
-  border: solid rgba(0, 0, 0, .1);
-  border-width: 0px 2px;
+  min-height: 75px;
 }
 
 .ant-layout-header .logo {
@@ -54,11 +45,12 @@
   vertical-align: middle;
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 2px 0px 0px;
+  min-height: 75px;
 }
 
 .ant-layout-header .logo .logo-image {
-  width: 35%;
-  height: 35%;
+  width: 50px;
+  height: 50px;
 }
 
 .ant-layout-header .action-bar {
@@ -71,6 +63,55 @@
   vertical-align: middle;
 }
 
+.ant-layout-header .notifications {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  size: 28px;
+  border: solid rgba(0, 0, 0, .1);
+  border-width: 0px 2px;
+  min-height: 75px;
+}
+
+.ant-layout-header .account-details {
+  padding: 0px 20px;
+}
+
+.ant-layout-header .account-details .user-image {
+  margin-left: -10px;
+}
+
+.ant-layout-header .account-details .user-name {
+  text-align: center;
+}
+
 .ant-layout-content {
   background-color: white;
+}
+
+.ant-layout-header img.rounded-image {
+  border-radius: 50%;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.ant-layout .page-header-row {
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  padding: 80px 0px 50px 0px;
+}
+
+.ant-layout .page-header-row h1 {
+  font-weight: bold;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.ant-input {
+  border-width: 1px;
 }
