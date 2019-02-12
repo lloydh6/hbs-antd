@@ -42,13 +42,13 @@
 .ant-layout-header .logo {
   width: 100%;
   text-align: center;
-  vertical-align: middle;
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 2px 0px 0px;
   min-height: 75px;
+  min-width: 75px;
 }
 
-.ant-layout-header .logo .logo-image {
+.ant-layout-header .logo-image {
   width: 50px;
   height: 50px;
 }
@@ -71,6 +71,7 @@
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 2px;
   min-height: 75px;
+  min-width: 75px;
 }
 
 .ant-layout-header .account-details {
@@ -89,7 +90,7 @@
   background-color: white;
 }
 
-.ant-layout-header img.rounded-image {
+img.rounded-image {
   border-radius: 50%;
 }
 
@@ -115,3 +116,44 @@
 .ant-input {
   border-width: 1px;
 }
+
+.patient-details-card {
+  border: solid black;
+  border-width: 1px;
+}
+
+.patient-details-card .primary {
+  border: solid rgba(0, 0, 0, .1);
+  border-width: 0px 2px 0px 0px;
+  min-width: 140px;
+}
+
+.patient-details-card .primary .image {
+  border: solid rgba(0, 0, 0, .1);
+  border-width: 0px 0px 2px 0px;
+  min-height: 150px;
+  margin-top: 10px;
+}
+
+.patient-details-card .primary .image .column {
+  width: 100%;
+  text-align: center;
+}
+
+.patient-details-card .primary .name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.patient-details-card .primary .dob {
+  min-height: 90px;
+}
+
+.patient-details-card .primary .dob .column {
+  width: 100%;
+}
+
+.patient-details-card .secondary {
+  min-width: 140px;
+}
+

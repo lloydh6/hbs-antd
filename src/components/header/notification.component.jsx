@@ -1,10 +1,12 @@
 import React from 'react';
-import { Icon } from 'antd';
+import { Icon, Row, Col } from 'antd';
 
 const Notifications = () => (
-  <div className="notifications">
-    <Icon type="bell" style={{ fontSize: '20px' }} />
-  </div>
+  <Row type="flex" align="middle" className="notifications">
+    <Col span={24}>
+      <Icon type="bell" style={{ fontSize: '20px' }} />
+    </Col>
+  </Row>
 );
 
 export default Notifications;

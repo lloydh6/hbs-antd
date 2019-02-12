@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import {
   Row,
   Col,
@@ -7,15 +8,18 @@ import {
   Input,
   Button,
 } from 'antd';
+import PageHeaderRow from '../common/pageHeaderRow';
 
 
-const PatientLookupComponent = ({ email, mobile, updateEmail, updateMobile }) => (
+const PatientLookupComponent = withRouter(({
+  email,
+  mobile,
+  updateEmail,
+  updateMobile,
+  history,
+}) => (
   <div>
-    <Row type="flex" justify="center" align="middle" className="page-header-row">
-      <Col span={24}>
-        <h1>Patient Lookup</h1>
-      </Col>
-    </Row>
+    <PageHeaderRow header="Patient Lookup" />
     <Form>
       <Row>
         <Col span={10} offset={7}>
@@ -45,7 +49,7 @@ const PatientLookupComponent = ({ email, mobile, updateEmail, updateMobile }) =>
       <Row>
         <Col className="text-align-center">
           <Form.Item>
-            <Button>
+            <Button type="primary" onClick={() => { history.push('/patient/id-123-456'); }}>
               Search
             </Button>
           </Form.Item>
@@ -53,7 +57,7 @@ const PatientLookupComponent = ({ email, mobile, updateEmail, updateMobile }) =>
       </Row>
     </Form>
   </div>
-);
+));
 
 PatientLookupComponent.propTypes = {
   email: PropTypes.string.isRequired,

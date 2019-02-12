@@ -1,9 +1,11 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { Layout } from 'antd';
 import Examples from './examples/Examples';
 import Header from './containers/header/header.container';
 import PatientLookup from './containers/patientLookup/patientLookup.container';
+import RouteNotFound from './components/routeNotFound/routeNotFound.component';
+import PatientMatch from './containers/patientMatch/patientMatch.container';
 import './App.css';
 
 const {
@@ -14,8 +16,12 @@ const App = () => (
   <Layout>
     <Header />
     <Content>
-      <Route path="/patientLookup" component={PatientLookup} />
-      <Route path="/examples" component={Examples} />
+      <Switch>
+        <Route path="/patientLookup" component={PatientLookup} />
+        <Route path="/patient/:id" component={PatientMatch} />
+        <Route path="/examples" component={Examples} />
+        <Route component={RouteNotFound} />
+      </Switch>
     </Content>
   </Layout>
 );
