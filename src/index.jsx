@@ -12,8 +12,8 @@ const middleware = [];
 
 if (process.env.NODE_ENV === 'development') {
   const { logger } = require('redux-logger');
-
   middleware.push(logger);
+  middleware.push(require('redux-immutable-state-invariant').default());
 }
 
 const store = compose(applyMiddleware(...middleware))(createStore)(reducers);

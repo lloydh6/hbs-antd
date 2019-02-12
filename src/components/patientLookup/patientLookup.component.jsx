@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Row,
   Col,
@@ -7,7 +8,8 @@ import {
   Button,
 } from 'antd';
 
-const PatientLookupComponent = ({email, mobile, search}) => (
+
+const PatientLookupComponent = ({ email, mobile, updateEmail, updateMobile }) => (
   <div>
     <Row type="flex" justify="center" align="middle" className="page-header-row">
       <Col span={24}>
@@ -21,7 +23,7 @@ const PatientLookupComponent = ({email, mobile, search}) => (
             colon={false}
             label="Email Address"
           >
-            <Input size="large" />
+            <Input size="large" value={email} onChange={e => updateEmail(e.target.value)} />
           </Form.Item>
         </Col>
       </Row>
@@ -36,7 +38,7 @@ const PatientLookupComponent = ({email, mobile, search}) => (
             colon={false}
             label="Mobile Number"
           >
-            <Input size="large" />
+            <Input size="large" value={mobile} onChange={e => updateMobile(e.target.value)} />
           </Form.Item>
         </Col>
       </Row>
@@ -52,5 +54,12 @@ const PatientLookupComponent = ({email, mobile, search}) => (
     </Form>
   </div>
 );
+
+PatientLookupComponent.propTypes = {
+  email: PropTypes.string.isRequired,
+  mobile: PropTypes.string.isRequired,
+  updateEmail: PropTypes.func.isRequired,
+  updateMobile: PropTypes.func.isRequired,
+};
 
 export default PatientLookupComponent;
