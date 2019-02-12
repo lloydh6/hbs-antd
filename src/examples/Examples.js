@@ -1,10 +1,13 @@
 import React from 'react';
-import { Form, Select, Input, Icon, Button } from 'antd';
-import './App.css';
+import { Form, Select, Input, Icon, Button, Layout } from 'antd';
+const {
+  Content,
+} = Layout;
 
 const { Option } = Select;
 
-const App = () => (
+const Examples = () => (
+  <Content>
   <Form>
       <Form.Item
       colon={false}
@@ -51,6 +54,7 @@ const App = () => (
           </Button>
         </Form.Item>
   </Form>
+  </Content>
 );
 
-export default App;
+export default Examples;
