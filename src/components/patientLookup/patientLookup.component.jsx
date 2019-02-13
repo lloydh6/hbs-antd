@@ -49,7 +49,7 @@ const PatientLookupComponent = withRouter(({
       <Row>
         <Col className="text-align-center">
           <Form.Item>
-            <Button type="primary" onClick={() => { history.push('/patient/id-123-456'); }}>
+            <Button type="primary" onClick={() => { history.push('/patient/'); }}>
               Search
             </Button>
           </Form.Item>

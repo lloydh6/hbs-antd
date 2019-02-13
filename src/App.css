@@ -113,47 +113,78 @@ img.rounded-image {
   text-align: center;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .ant-input {
   border-width: 1px;
 }
 
-.patient-details-card {
+.patient-card-wrapper {
+  min-width: 600px;
+}
+
+.patient-card-wrapper .patient-details-card {
   border: solid black;
   border-width: 1px;
 }
 
-.patient-details-card .primary {
+.patient-card-wrapper  .patient-details-card .primary {
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 2px 0px 0px;
   min-width: 140px;
 }
 
-.patient-details-card .primary .image {
+.patient-card-wrapper .patient-details-card .primary .image {
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 0px 2px 0px;
   min-height: 150px;
   margin-top: 10px;
 }
 
-.patient-details-card .primary .image .column {
+.patient-card-wrapper .patient-details-card .primary .image .column {
   width: 100%;
   text-align: center;
 }
 
-.patient-details-card .primary .name {
+.patient-card-wrapper .patient-details-card .primary .name {
   font-weight: bold;
   margin-top: 10px;
 }
 
-.patient-details-card .primary .dob {
+.patient-card-wrapper .patient-details-card .primary .dob {
   min-height: 90px;
 }
 
-.patient-details-card .primary .dob .column {
+.patient-card-wrapper .patient-details-card .primary .dob .column {
   width: 100%;
 }
 
-.patient-details-card .secondary {
+.patient-card-wrapper .patient-details-card .secondary {
   min-width: 140px;
 }
 
+.patient-card-wrapper .patient-details-card .information-title {
+  font-weight: bold;
+  color: #b1b1b1;
+}
+
+.patient-card-wrapper .patient-details-card .information-details {
+  font-weight: bold;
+}
+
+.patient-card-wrapper .patient-details-card .information-wrapper {
+  height: 100%;
+  padding: 35px;
+}
+
+.patient-card-wrapper .patient-details-card .information-wrapper .details {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-button-row {
+  margin: 50px 0px;
+}

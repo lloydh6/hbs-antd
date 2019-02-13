@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col, Button } from 'antd';
+import moment from 'moment';
 import RoundedImage from './rounded-image.component';
 
 const PatientDetailsCard = () => (
@@ -17,16 +18,39 @@ const PatientDetailsCard = () => (
           </Col>
         </Row>
         <Row type="flex" align="middle" className="dob">
-          <Col>
-            <div>D.O.B</div>
-            <div>
-              16/04/1991
+          <Col span={19} offset={5}>
+            <div className="information-title">D.O.B</div>
+            <div className="information-details">
+              {moment('19910416').format('DD/MM/YYYY')}
             </div>
           </Col>
         </Row>
       </Col>
       <Col span={17} className="secondary">
-        Details
+        <Row type="flex" className="information-wrapper">
+          <Col span={16}>
+            <Row type="flex" className="details">
+              <Col>
+                <div className="information-title">Address</div>
+                <div className="information-details">3B High Street, Newton</div>
+                <div className="information-details">WA12 9SP</div>
+              </Col>
+              <Col>
+                <div className="information-title">Email</div>
+                <div className="information-details">my-email@ansgroup.co.uk</div>
+              </Col>
+              <Col>
+                <div className="information-title">Phone</div>
+                <div className="information-details">07460876543</div>
+              </Col>
+            </Row>
+          </Col>
+          <Col span={8} className="text-align-right">
+            <Button>
+              Edit
+            </Button>
+          </Col>
+        </Row>
       </Col>
     </Row>
   </div>
