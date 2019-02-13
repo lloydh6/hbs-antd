@@ -1,4 +1,10 @@
-import { PATIENT_LOOKUP_UPDATE_EMAIL, PATIENT_LOOKUP_UPDATE_MOBILE } from '../actionTypes';
+import { PATIENT_LOOKUP_UPDATE_EMAIL, PATIENT_LOOKUP_UPDATE_MOBILE, PATIENT_LOOKUP_INITIALIZE } from '../actionTypes';
+
+export function initializeComponent() {
+  return {
+    type: PATIENT_LOOKUP_INITIALIZE,
+  };
+}
 
 export function updateEmail(value) {
   return {

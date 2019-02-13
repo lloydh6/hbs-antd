@@ -1,16 +1,16 @@
 import React from 'react';
-import { Row, Col, InputNumber } from 'antd';
+import { Row, Col, Input } from 'antd';
 
 const DateOfBirthControl = () => (
   <Row type="flex" className="dob-wrapper">
     <Col span={7}>
-      <InputNumber size="large" placeholder="DD" />
+      <Input size="large" placeholder="DD" />
     </Col>
     <Col span={7}>
-      <InputNumber size="large" placeholder="MM" />
+      <Input size="large" placeholder="MM" />
     </Col>
     <Col span={7}>
-      <InputNumber size="large" placeholder="YYYY" />
+      <Input size="large" placeholder="YYYY" />
     </Col>
   </Row>
 );

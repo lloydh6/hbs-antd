@@ -21,6 +21,7 @@ const PatientNotFoundComponent = withRouter(({ match, history }) => (
       <Col span={8} className="hr" />
     </Row>
     <CreatePatient />
+    <Row className="footer-buffer" />
   </div>
 ));
 

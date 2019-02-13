@@ -8,6 +8,14 @@
   border-width: 0 0 1px 0;
 }
 
+.ant-input:hover {
+  border-right-width: 0px !important;
+}
+
+.ant-input:focus {
+  border-width: 1px !important;
+}
+
 .ant-btn {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
@@ -34,9 +42,9 @@
 .ant-layout-header {
   background-color: white;
   padding: 0;
-  border: solid rgba(0, 0, 0, .1);
-  border-width: 0px 0px 2px 0px;
   min-height: 75px;
+  box-shadow: 0px 0px 5px 1px #00000024;
+  z-index: 5;
 }
 
 .ant-layout-header .logo {
@@ -86,10 +94,6 @@
   text-align: center;
 }
 
-.ant-layout-content {
-  background-color: white;
-}
-
 img.rounded-image {
   border-radius: 50%;
 }
@@ -100,6 +104,10 @@ img.rounded-image {
 
 .flex-direction-column {
   flex-direction: column;
+}
+
+.ant-layout {
+  background: #fff
 }
 
 .ant-layout .page-header-row {
@@ -119,10 +127,6 @@ img.rounded-image {
 
 .text-align-right {
   text-align: right;
-}
-
-.ant-input {
-  border-width: 1px;
 }
 
 .patient-card-wrapper {
@@ -201,9 +205,13 @@ img.rounded-image {
 }
 
 .hr {
-  border-bottom: 1px solid #b1b1b1;
+  border-bottom: 1px solid #ff9f00;
 }
 
 .dob-wrapper {
   justify-content: space-between
+}
+
+.footer-buffer {
+  height: 300px;
 }
