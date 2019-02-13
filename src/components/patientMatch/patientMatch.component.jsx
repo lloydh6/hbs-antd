@@ -22,7 +22,7 @@ const PatientMatchComponent = withRouter(({ match, history }) => (
       <Form>
         <Col className="text-align-center" span={12}>
           <Form.Item>
-            <Button onClick={() => { history.push('/patientLookup'); }}>
+            <Button onClick={() => { history.push('/patient/search'); }}>
               Search Again
             </Button>
           </Form.Item>

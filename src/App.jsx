@@ -18,9 +18,9 @@ const App = () => (
     <Header />
     <Content>
       <Switch>
-        <Route path="/patientLookup" component={PatientLookup} />
-        <Route path="/patient/notFound" component={patientNotFound} />
-        <Route path="/patient/:id" component={PatientMatch} />
+        <Route exact path="/patient/search" component={PatientLookup} />
+        <Route exact path="/patient/search/:type/:query" component={patientNotFound} />
+        <Route path="/patient/result/:id" component={PatientMatch} />
         <Route path="/examples" component={Examples} />
         <Route component={RouteNotFound} />
       </Switch>

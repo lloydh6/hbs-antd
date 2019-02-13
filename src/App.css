@@ -98,11 +98,15 @@ img.rounded-image {
   flex-wrap: nowrap;
 }
 
+.flex-direction-column {
+  flex-direction: column;
+}
+
 .ant-layout .page-header-row {
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  padding: 80px 0px 50px 0px;
+  padding: 80px 0px 0px 0px;
 }
 
 .ant-layout .page-header-row h1 {
@@ -123,6 +127,7 @@ img.rounded-image {
 
 .patient-card-wrapper {
   min-width: 600px;
+  margin: 20px 0px 0px 0px;
 }
 
 .patient-card-wrapper .patient-details-card {
@@ -167,7 +172,8 @@ img.rounded-image {
 
 .patient-card-wrapper .patient-details-card .information-title {
   font-weight: bold;
-  color: #b1b1b1;
+  /* color: #b1b1b1; */
+  color: #ff9f00;
 }
 
 .patient-card-wrapper .patient-details-card .information-details {
@@ -187,4 +193,17 @@ img.rounded-image {
 
 .form-button-row {
   margin: 50px 0px;
+}
+
+.text-highlight {
+  font-weight: bold;
+  color: #ff9f00;
+}
+
+.hr {
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.dob-wrapper {
+  justify-content: space-between
 }

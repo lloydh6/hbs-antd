@@ -21,8 +21,8 @@ const PatientLookupComponent = withRouter(({
   <div>
     <PageHeaderRow header="Patient Lookup" />
     <Form>
-      <Row>
-        <Col span={10} offset={7}>
+      <Row type="flex" className="flex-direction-column" justify="center" align="middle">
+        <Col span={10}>
           <Form.Item
             colon={false}
             label="Email Address"
@@ -30,14 +30,10 @@ const PatientLookupComponent = withRouter(({
             <Input size="large" value={email} onChange={e => updateEmail(e.target.value)} />
           </Form.Item>
         </Col>
-      </Row>
-      <Row>
-        <Col span={10} offset={7}>
+        <Col span={10}>
           Or
         </Col>
-      </Row>
-      <Row>
-        <Col span={10} offset={7}>
+        <Col span={10}>
           <Form.Item
             colon={false}
             label="Mobile Number"
@@ -49,7 +45,14 @@ const PatientLookupComponent = withRouter(({
       <Row>
         <Col className="text-align-center">
           <Form.Item>
-            <Button type="primary" onClick={() => { history.push('/patient/'); }}>
+            <Button
+              type="primary"
+              onClick={() => {
+                if (email || mobile) {
+                  history.push(`/patient/search/${email ? 'email' : 'mobile'}/${email || mobile}`);
+                }
+              }}
+            >
               Search
             </Button>
           </Form.Item>
