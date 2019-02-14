@@ -15,10 +15,10 @@ const Account = () => (
           </div>
         </Row>
       </Col>
-      <Col span={10} className="user-name">
+      <Col span={9} className="user-name">
         Lloyd
       </Col>
-      <Col span={2}>
+      <Col span={3}>
         <Icon type="down" />
       </Col>
     </Row>

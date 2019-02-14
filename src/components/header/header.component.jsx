@@ -14,12 +14,8 @@ const HeaderComponent = () => (
     <Col span={17}>
       <ActionBar />
     </Col>
-    <Col span={1}>
-      <Notifications />
-    </Col>
-    <Col span={4}>
-      <Account />
-    </Col>
+    <Notifications />
+    <Account />
   </Row>
 );
 

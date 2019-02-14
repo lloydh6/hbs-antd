@@ -26,7 +26,7 @@ const CreatePatientComponent = withRouter(({
     <PageHeaderRow header="Create Account" />
     <Form>
       <Row type="flex" className="flex-direction-column" align="middle">
-        <Col span={10}>
+        <Col span={10} style={{ maxWidth: '600px' }}>
           <Form.Item
             colon={false}
             label="Patient First Name"
