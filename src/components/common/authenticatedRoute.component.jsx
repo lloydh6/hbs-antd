@@ -37,7 +37,12 @@ LayoutWrapper.defaultProps = {
   disableHeader: false,
 };
 
-const AuthenticatedRoute = ({ component: Component, disableHeader, isAuthenticated, ...rest }) => (
+const AuthenticatedRoute = ({
+  component: Component,
+  disableHeader,
+  isAuthenticated,
+  ...rest
+}) => (
   <Route
     {...rest}
     render={props => (
@@ -64,10 +69,12 @@ const AuthenticatedRoute = ({ component: Component, disableHeader, isAuthenticat
 AuthenticatedRoute.propTypes = {
   component: PropTypes.func.isRequired,
   disableHeader: PropTypes.bool,
+  isAuthenticated: PropTypes.bool,
 };
 
 AuthenticatedRoute.defaultProps = {
   disableHeader: false,
+  isAuthenticated: false,
 };
 
 export default AuthenticatedRoute;

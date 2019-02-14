@@ -16,19 +16,12 @@
   border-width: 1px !important;
 }
 
-.ant-input-password:hover {
-  border-right-width: 0px !important;
-}
-.ant-input-password-large:hover {
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
   border-right-width: 0px !important;
 }
 
-.ant-input-affix-wrapper:hover {
-  border-right-width: 0px !important;
-}
-
-.ant-input-affix-wrapper-lg:hover {
-  border-right-width: 0px !important;
+.ant-input-affix-wrapper:hover .ant-input:focus {
+  border-right-width: 1px !important;
 }
 
 .ant-btn {

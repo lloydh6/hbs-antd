@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 import {
   Row,
   Form,
@@ -9,12 +10,13 @@ import {
 } from 'antd';
 import logoSrc from '../../images/hbsuk-virtual-lucy-logo.png';
 
-const LogInComponent = ({
+const LogInComponent = withRouter(({
   email,
   password,
   updateEmail,
   updatePassword,
   logIn,
+  history,
 }) => (
   <div className="log-in-app">
     <div className="log-in-wrapper">
@@ -29,7 +31,7 @@ const LogInComponent = ({
             colon={false}
             label="Email Address"
           >
-            <Input size="large" value={email} onChange={e => updateEmail(e.target.value)}/>
+            <Input size="large" value={email} onChange={e => updateEmail(e.target.value)} />
           </Form.Item>
           <Form.Item
             colon={false}
@@ -43,7 +45,12 @@ const LogInComponent = ({
           <Form.Item>
             <Button
               type="primary"
-              onClick={logIn}
+              onClick={() => {
+                logIn();
+                setTimeout(() => {
+                  history.push('/patient/search');
+                });
+              }}
             >
               Sign In
             </Button>
@@ -55,7 +62,7 @@ const LogInComponent = ({
       </Row>
     </div>
   </div>
-);
+));
 
 LogInComponent.propTypes = {
   email: PropTypes.string.isRequired,
