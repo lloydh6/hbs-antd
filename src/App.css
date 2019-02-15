@@ -56,7 +56,6 @@
 }
 
 .ant-layout-header .logo {
-  width: 100%;
   text-align: center;
   border: solid rgba(0, 0, 0, .1);
   border-width: 0px 2px 0px 0px;
@@ -70,6 +69,8 @@
 }
 
 .ant-layout-header .action-bar {
+  width: 100%;
+  margin: 0px 10px;
   vertical-align: middle;
 }
 
@@ -79,7 +80,6 @@
 }
 
 .ant-layout-header .notifications {
-  margin: 0px 0px 0px 10px;
   width: 75px;
   text-align: center;
   size: 28px;
@@ -91,7 +91,8 @@
 
 .ant-layout-header .account-details {
   padding: 0px 15px;
-  width: 100%;
+  margin: 0px 10px;
+  width: 275px;
 }
 
 .ant-layout-header .account-details .user-image {
@@ -208,56 +209,8 @@ img.rounded-image {
   margin: 50px 0px;
 }
 
-.text-highlight {
-  font-weight: bold;
-  color: #ff9f00;
-}
-
-.hr {
-  border-bottom: 1px solid #ff9f00;
-}
-
 .dob-wrapper {
   justify-content: space-between
-}
-
-.footer-buffer {
-  height: 300px;
-}
-
-.log-in-wrapper {
-  padding: 70px 82px;
-  max-width: 470px;
-}
-
-.log-in-wrapper img.logo {
-  width: 80px;
-}
-
-.log-in-wrapper .header {
-  font-size: 30px;
-  padding: 35px 0px 0px 0px;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.log-in-wrapper .sign-in-form {
-  margin: 70px 0px 0px 0px;
-}
-
-.log-in-wrapper .login-button-row {
-  margin: 20px 0px 0px 0px;
-}
-
-.log-in-app {
-  background: url('./images/rawpixel-760103-unsplash.jpg') no-repeat;
-  background-size: 100%;
-}
-
-.log-in-wrapper .privacy-policy {
-  margin: 170px 0px 0px 0px;
 }
 
 .full-height {
