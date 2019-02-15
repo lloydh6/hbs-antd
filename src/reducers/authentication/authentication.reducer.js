@@ -1,7 +1,7 @@
 import { WEBSITE_LOG_IN_COMPLETE_SUCCESS } from '../../actions/actionTypes';
 
 const initialState = {
-  isAuthenticated: false,
+  isAuthenticated: true,
 };
 
 const authentication = (state = initialState, action) => {
