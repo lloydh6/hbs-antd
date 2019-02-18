@@ -103,9 +103,9 @@
   text-align: center;
 }
 
-img.rounded-image {
+/* img.rounded-image {
   border-radius: 50%;
-}
+} */
 
 .flex-nowrap {
   flex-wrap: nowrap;

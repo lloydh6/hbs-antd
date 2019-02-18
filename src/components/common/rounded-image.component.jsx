@@ -1,5 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+export const RoundedImg = styled.img`
+  border-radius: 50%;
+`;
 
 const RoundedImage = ({
   src,
@@ -7,7 +12,7 @@ const RoundedImage = ({
   width,
   style,
 }) => (
-  <img src={src} alt={alt} className="rounded-image" width={width} style={style} />
+  <RoundedImg src={src} alt={alt} width={width} style={style} />
 );
 
 RoundedImage.propTypes = {
