@@ -63,10 +63,10 @@
   min-width: 75px;
 }
 
-.ant-layout-header .logo-image {
+/* .ant-layout-header .logo-image {
   width: 50px;
   height: 50px;
-}
+} */
 
 .ant-layout-header .action-bar {
   width: 100%;
@@ -74,10 +74,10 @@
   vertical-align: middle;
 }
 
-.ant-layout-header .action-bar .action-button-group {
+/* .ant-layout-header .action-bar .action-button-group {
   text-align: right;
   vertical-align: middle;
-}
+} */
 
 .ant-layout-header .notifications {
   width: 75px;
@@ -95,9 +95,9 @@
   width: 275px;
 }
 
-.ant-layout-header .account-details .user-image {
+/* .ant-layout-header .account-details .user-image {
   margin-left: -10px;
-}
+} */
 
 .ant-layout-header .account-details .user-name {
   text-align: center;

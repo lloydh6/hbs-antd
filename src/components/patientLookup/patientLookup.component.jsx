@@ -57,7 +57,7 @@ class PatientLookupComponent extends Component {
                   type="primary"
                   onClick={() => {
                     if (email || mobile) {
-                      history.push(`/patient/search/${email ? 'email' : 'mobile'}/${email || mobile}`);
+                      history.push(`/patient/search/email/${email || mobile}`);
                     }
                   }}
                 >
