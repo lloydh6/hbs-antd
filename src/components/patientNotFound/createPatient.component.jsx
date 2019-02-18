@@ -8,7 +8,7 @@ import {
   Col,
   Button,
 } from 'antd';
-import PageHeaderRow from '../common/pageHeaderRow';
+import PageHeaderRow from '../common/pageHeaderRow.component';
 import DateOfBirthControl from '../common/dob.component';
 
 const CreatePatientComponent = withRouter(({

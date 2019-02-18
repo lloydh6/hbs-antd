@@ -9,7 +9,12 @@ import {
   Input,
   Button,
 } from 'antd';
-import PageHeaderRow from '../common/pageHeaderRow';
+import styled from 'styled-components';
+import PageHeaderRow from '../common/pageHeaderRow.component';
+
+export const ButtonWrapper = styled.div`
+  text-align: center;
+`;
 
 class PatientLookupComponent extends Component {
   componentWillMount() {
@@ -51,7 +56,7 @@ class PatientLookupComponent extends Component {
             </Col>
           </Row>
           <Row>
-            <Col className="text-align-center">
+            <ButtonWrapper>
               <Form.Item>
                 <Button
                   type="primary"
@@ -64,7 +69,7 @@ class PatientLookupComponent extends Component {
                   Search
                 </Button>
               </Form.Item>
-            </Col>
+            </ButtonWrapper>
           </Row>
         </Form>
       </div>

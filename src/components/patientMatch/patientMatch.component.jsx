@@ -7,7 +7,7 @@ import {
   Form,
   Button,
 } from 'antd';
-import PageHeaderRow from '../common/pageHeaderRow';
+import PageHeaderRow from '../common/pageHeaderRow.component';
 import PatientDetailsCard from '../common/patientDetailsCard.component';
 
 const PatientMatchComponent = withRouter(({ match, history }) => (

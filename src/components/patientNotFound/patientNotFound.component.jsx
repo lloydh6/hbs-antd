@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import ReactRouterPropTypes from 'react-router-prop-types';
 import { Row, Col, Button } from 'antd';
 import styled from 'styled-components';
-import PageHeaderRow from '../common/pageHeaderRow';
+import PageHeaderRow from '../common/pageHeaderRow.component';
 import CreatePatient from '../../containers/createPatient/createPatient.container';
 
 export const FooterBuffer = styled.div`
